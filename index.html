@@ -4,7 +4,13 @@
     <title>Portfolio</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="button.css" />
+    <link rel="stylesheet" href="changetoScss.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -22,7 +28,7 @@
   <body>
     <header class="header_area">
       <div class="main-menu">
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
           <button
             class="navbar-toggler"
             type="button"
@@ -31,8 +37,13 @@
             aria-controls="navbarnav"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            onclick="openNav()"
           >
-            <span class="navbar-toggler-icon"></span>
+            <div id="navicon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </button>
           <div class="collapse navbar-collapse" id="navbarnav">
             <div class="mr-auto">
@@ -84,45 +95,9 @@
         </div>
       </section>
     </main>
-    <main class="about-main" id="about">
-      <section class="about-area">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-6 col-md-12 about-img">
-              <img src="" alt="about imagem" />
-            </div>
-            <div class="col-lg-6 col-md-12 about-tittle">
-              <span>Let me</span>
-              <span>Introduce</span>
-              <span>My Self</span>
-              <div class="paragraph">
-                <p class="para">
-                  Hi! My name is Samuel and I have 21 years old. I´m from Braga,
-                  Portugal.<br />I have a degree in IT Engineering at the School
-                  of Technology and Management of Lamego.
-                </p>
-                <p class="para">
-                  I always had a passion for design, and the university helped
-                  me to discover what programming languages were and to like
-                  them. So my goal is to bring the two together and be a
-                  front-end developer.
-                </p>
-                <p class="para">
-                  I´m a very dedicated person in what i do, especially in what i
-                  like. <br />I´m responsible, and worker.<br />
-                  I never satisfied with what I know or my skills because what i
-                  want is to improve more and more. No one has 100% skill, not
-                  even the best programmers in the world.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
     <main id="project" class="project-main">
       <section class="project-area">
-        <h2 class="tittle">SOME PROJECTS I´M WORKING ON</h2>
+        <h2 class="tittle">PROJECTS I´M WORKING ON</h2>
         <div class="container-fluid">
           <div class="discord-bot">
             <div class="discordProj-tittle">Bot Discord</div>
@@ -142,7 +117,9 @@
                 <div class="typelang row">
                   <div class="col-md-12">
                     <img src="" alt="javascript-icon" />
-                    <button class="source btn btn-dark">SOURCE</button>
+                    <button class="source btn btn-dark">
+                      <i class="fab fa-github"></i> SOURCE
+                    </button>
                   </div>
                 </div>
               </div>
@@ -196,6 +173,98 @@
         </div>
       </section>
     </main>
+    <main class="about-main" id="about">
+      <section class="about-area">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 about-img">
+              <img src="" alt="about imagem" />
+            </div>
+            <div class="col-lg-6 col-md-12 about-tittle">
+              <span>Let me</span>
+              <span>Introduce</span>
+              <span>My Self</span>
+              <div class="paragraph">
+                <p class="para">
+                  Hi! My name is Samuel and I have 21 years old. I´m from Braga,
+                  Portugal.<br />I have a degree in IT Engineering at the School
+                  of Technology and Management of Lamego.
+                </p>
+                <p class="para">
+                  I always had a passion for design, and the university helped
+                  me to discover what programming languages were and to like
+                  them. So my goal is to bring the two together and be a
+                  front-end developer.
+                </p>
+                <p class="para">
+                  I´m a very dedicated person in what i do, especially in what i
+                  like. <br />I´m responsible, and worker.<br />
+                  I never satisfied with what I know or my skills because what i
+                  want is to improve more and more. No one has 100% skill, not
+                  even the best programmers in the world.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="timeline">
+          <!-- first item -->
+          <li>
+            <div class="direction-r">
+              <div class="flag-wrapper">
+                <span class="flag">Self-Thaught</span>
+                <span class="time-wrapper"
+                  ><span class="time">2020 - present</span></span
+                >
+              </div>
+              <div class="descricao">
+                <p><b>To-Do-List:</b> HTML5 + CSS3 + Javascript;</p>
+                <p>
+                  <b>1st. Version of Samuel Gonçalves Portfolio:</b> HTML5 +
+                  CSS3 + Javascript;
+                </p>
+                <p><b>Discord Bot:</b> Javascript;</p>
+                <p><b>More projects comming...</b></p>
+              </div>
+            </div>
+          </li>
+          <!-- second item-->
+          <li>
+            <div class="direction-l">
+              <div class="flag-wrapper">
+                <span class="flag">IPV - Lamego</span>
+                <span class="time-wrapper"
+                  ><span class="time">2017 - 2020</span></span
+                >
+              </div>
+              <div class="descricao">
+                <p>IT Engineering Degree at ESTGL</p>
+                <p>
+                  <b>2020 Final Project:</b> Android App (front-end and
+                  back-end) made for EgisRoadPortugal: Java + Firebase
+                </p>
+                <p><b>2020 - Softinsa Trainnig:</b> Oracle ODI + Vm Box;</p>
+              </div>
+            </div>
+          </li>
+          <!-- third item -->
+          <li>
+            <div class="direction-r">
+              <div class="flag-wrapper">
+                <span class="flag">ESVV - Vila Verde</span>
+                <span class="time-wrapper"
+                  ><span class="time">2014 - 2017</span></span
+                >
+              </div>
+              <div class="descricao">
+                <p>Science and Tecnology Course at ESVV</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script src="button.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

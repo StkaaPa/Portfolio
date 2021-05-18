@@ -1,0 +1,66 @@
+.navbar button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+#navicon {
+  width: 50px;
+  height: 45px;
+  position: relative;
+  margin: 0px auto;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+}
+
+#navicon span {
+  display: block;
+  position: absolute;
+  height: 7px;
+  width: 100%;
+  background: #d3531a;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+#navicon span:nth-child(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+#navicon span:nth-child(2) {
+  top: 18px;
+  transform-origin: left center;
+}
+
+#navicon span:nth-child(3) {
+  top: 36px;
+  transform-origin: left center;
+}
+
+/* open navicon */
+#navicon.open span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 0px;
+  left: 8px;
+}
+
+#navicon.open span:nth-child(2) {
+  width: 0px;
+  opacity: 0;
+}
+
+#navicon.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 36px;
+  left: 8px;
+}
+
+/* TENHO QUE TIRAR ISTO DAQUI */
+.project-area .discord-bot img {
+  max-width: 100%;
+}
