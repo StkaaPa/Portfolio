@@ -30,8 +30,22 @@ body {
   height: 100%;
   margin-left: -3px;
   background: #505050;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(80, 80, 80, 0)), color-stop(8%, #505050), color-stop(92%, #505050), to(rgba(80, 80, 80, 0)));
-  background: linear-gradient(to bottom, rgba(80, 80, 80, 0) 0%, #505050 8%, #505050 92%, rgba(80, 80, 80, 0) 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(80, 80, 80, 0)),
+    color-stop(8%, #505050),
+    color-stop(92%, #505050),
+    to(rgba(80, 80, 80, 0))
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(80, 80, 80, 0) 0%,
+    #505050 8%,
+    #505050 92%,
+    rgba(80, 80, 80, 0) 100%
+  );
   z-index: 5;
 }
 
@@ -55,8 +69,9 @@ body {
 }
 
 .about-main .about-area .timeline li .direction-l .flag {
-  -webkit-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
-          box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15),
+    0 0 1px rgba(0, 0, 0, 0.15);
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
 }
 
 .about-main .about-area .timeline li .direction-l .flag::before {
@@ -105,8 +120,9 @@ body {
 }
 
 .about-main .about-area .timeline li .direction-r .flag {
-  -webkit-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
-          box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15),
+    0 0 1px rgba(0, 0, 0, 0.15);
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
 }
 
 .about-main .about-area .timeline li .direction-r .flag:before {
@@ -229,7 +245,7 @@ body {
     padding: 1em;
     background: whitesmoke;
     -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
-            box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
     z-index: 15;
   }
   .about-main .about-area .timeline li .direction-r {
@@ -273,7 +289,7 @@ body {
     padding: 1em;
     background: whitesmoke;
     -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
-            box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
     z-index: 15;
   }
   .about-main .about-area .timeline .flag-wrapper {
@@ -296,5 +312,76 @@ body {
     border-left: 1px solid black;
     border-right: 1px solid black;
   }
+}
+
+.navbar button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+#navicon {
+  width: 50px;
+  height: 45px;
+  position: relative;
+  margin: 0px auto;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  /* scss - class open created on button.js file */
+}
+
+#navicon span {
+  display: block;
+  position: absolute;
+  height: 7px;
+  width: 100%;
+  background: #d3531a;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+#navicon span:nth-child(1) {
+  top: 0px;
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#navicon span:nth-child(2) {
+  top: 18px;
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#navicon span:nth-child(3) {
+  top: 36px;
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#navicon.open span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 0px;
+  left: 8px;
+}
+
+#navicon.open span:nth-child(2) {
+  width: 0px;
+  opacity: 0;
+}
+
+#navicon.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 36px;
+  left: 8px;
 }
 /*# sourceMappingURL=style.css.map */
