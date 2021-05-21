@@ -298,16 +298,53 @@ body {
   }
 }
 
-.navbar button {
+.header_area .main-menu .navbar {
+  padding: 0% 20%;
+}
+
+.header_area .main-menu .navbar button {
   margin: 0;
   padding: 0;
   border: none;
   cursor: pointer;
 }
 
-.navbar .navbar-brand img {
+.header_area .main-menu .navbar .navbar-brand {
+  padding: 0 15%;
+}
+
+.header_area .main-menu .navbar .navbar-brand img {
   max-width: 100px;
   max-height: 110px;
+}
+
+.header_area .main-menu .navbar .navbar-nav .nav-item {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 17px;
+  padding: 1.5rem;
+}
+
+.header_area .main-menu .navbar .navbar-nav .nav-item a {
+  color: #fff;
+}
+
+.header_area .main-menu .navbar .navbar-nav .nav-item a:hover {
+  background: #893fee;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.header_area .main-menu .navbar .navbar-nav .active a {
+  background: #893fee;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header_area .main-menu .navbar .navbar-nav .active a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 #navicon {
@@ -372,6 +409,18 @@ body {
           transform: rotate(-45deg);
   top: 36px;
   left: 8px;
+}
+
+@media screen and (max-width: 600px) {
+  .header_area .main-menu .navbar {
+    padding: 0% 15%;
+    opacity: 0.95;
+  }
+  .header_area .main-menu .navbar .navbar-nav .active a {
+    background: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 .project-area .discord-bot img {
@@ -450,30 +499,106 @@ body {
   background: none;
 }
 
-.site-main .site-banner .site-tittle span {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  letter-spacing: 1px;
-  font-size: 50px;
-  background: lightcoral;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  /* pensar se coloco isto ou nao
-        &:after {
-          content: "";
-          height: 2px;
-          width: 20vw;
-          background: black;
-          display: inline-block;
-          transform: translateY(-6px);
-          position: relative;
-          bottom: -60px;
-        } */
+.site-main .site-banner .site-tittle {
+  padding: 10%;
+}
+
+.site-main .site-banner .site-tittle h3 {
+  font-size: 2rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.site-main .site-banner .site-tittle h3:after {
+  content: "";
+  height: 2px;
+  width: 20vw;
+  background: black;
+  display: inline-block;
+  margin-left: 1%;
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+}
+
+.site-main .site-banner .site-tittle h1 {
+  font-size: 5rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.site-main .site-banner .site-tittle h4 {
+  font-size: 0.9rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.site-main .site-banner .site-tittle .site-buttons button {
+  padding: 0.6rem 1.6rem;
+  font: normal bold;
+  position: relative;
+  margin-top: 10px;
+  border: 3px solid transparent;
+  border-radius: 3px;
+}
+
+.site-main .site-banner .site-tittle .site-buttons button.firstbutton {
+  background: lightblue;
+  background-clip: padding-box;
+  color: whitesmoke;
+  -webkit-transition: background 0.6s ease;
+  transition: background 0.6s ease;
+}
+
+.site-main .site-banner .site-tittle .site-buttons button.firstbutton:hover {
+  background: whitesmoke;
+  background-clip: padding-box;
+  color: black;
+}
+
+.site-main .site-banner .site-tittle .site-buttons button.firstbutton:after {
+  top: -2px;
+  left: -2px;
+  bottom: -2px;
+  right: -2px;
+  position: absolute;
+  background: lightblue;
+  content: "";
+  z-index: -1;
+  border-radius: 2px;
+  outline: none;
+}
+
+.site-main .site-banner .site-tittle .site-buttons button.secondbutton {
+  background: white;
+  background-clip: padding-box;
+  color: black;
+  -webkit-transition: background 0.6s ease;
+  transition: background 0.6s ease;
+}
+
+.site-main .site-banner .site-tittle .site-buttons button.secondbutton:hover {
+  background: lightblue;
+  background-clip: padding-box;
+  color: whitesmoke;
+}
+
+.site-main .site-banner .site-tittle .site-buttons button.secondbutton::after {
+  top: -2px;
+  left: -2px;
+  bottom: -2px;
+  right: -2px;
+  position: absolute;
+  background: lightblue;
+  content: "";
+  z-index: -1;
+  border-radius: 3px;
 }
 
 .site-main .banner-img img {
-  max-width: 180px;
-  max-height: 170px;
+  max-width: 650px;
+  max-height: 629px;
+}
+
+@media screen and (max-width: 600px) {
+  .site-main .site-banner .banner-img img {
+    max-width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
