@@ -4,7 +4,7 @@
 }
 
 body {
-  padding-top: 63px;
+  padding-top: 130px;
 }
 
 .about-main .about-area .timeline {
@@ -305,6 +305,11 @@ body {
   cursor: pointer;
 }
 
+.navbar .navbar-brand img {
+  max-width: 100px;
+  max-height: 110px;
+}
+
 #navicon {
   width: 50px;
   height: 45px;
@@ -350,19 +355,19 @@ body {
           transform-origin: left center;
 }
 
-#navicon .open span:nth-child(1) {
+#navicon.open span:nth-child(1) {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   top: 0px;
   left: 8px;
 }
 
-#navicon .open span:nth-child(2) {
+#navicon.open span:nth-child(2) {
   width: 0px;
   opacity: 0;
 }
 
-#navicon .open span:nth-child(3) {
+#navicon.open span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   top: 36px;
@@ -439,5 +444,36 @@ body {
   color: #333;
   font-family: "kanit";
   font-size: 18px;
+}
+
+.site-main .site-banner {
+  background: none;
+}
+
+.site-main .site-banner .site-tittle span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  letter-spacing: 1px;
+  font-size: 50px;
+  background: lightcoral;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* pensar se coloco isto ou nao
+        &:after {
+          content: "";
+          height: 2px;
+          width: 20vw;
+          background: black;
+          display: inline-block;
+          transform: translateY(-6px);
+          position: relative;
+          bottom: -60px;
+        } */
+}
+
+.site-main .banner-img img {
+  max-width: 180px;
+  max-height: 170px;
 }
 /*# sourceMappingURL=style.css.map */

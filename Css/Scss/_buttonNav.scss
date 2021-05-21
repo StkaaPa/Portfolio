@@ -5,7 +5,14 @@
     border: none;
     cursor: pointer;
   }
+  .navbar-brand {
+    img {
+      max-width: 100px;
+      max-height: 110px;
+    }
+  }
 }
+
 #navicon {
   width: 50px;
   height: 45px;
@@ -38,22 +45,23 @@
     }
   }
   /* scss - class open created on button.js file */
-  .open {
-    span {
-      &:nth-child(1) {
-        transform: rotate(45deg);
-        top: 0px;
-        left: 8px;
-      }
-      &:nth-child(2) {
-        width: 0px;
-        opacity: 0;
-      }
-      &:nth-child(3) {
-        transform: rotate(-45deg);
-        top: 36px;
-        left: 8px;
-      }
+}
+
+#navicon.open {
+  span {
+    &:nth-child(1) {
+      transform: rotate(45deg);
+      top: 0px;
+      left: 8px;
+    }
+    &:nth-child(2) {
+      width: 0px;
+      opacity: 0;
+    }
+    &:nth-child(3) {
+      transform: rotate(-45deg);
+      top: 36px;
+      left: 8px;
     }
   }
 }

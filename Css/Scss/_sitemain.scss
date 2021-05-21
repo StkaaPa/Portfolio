@@ -1,0 +1,32 @@
+.site-main {
+  .site-banner {
+    background: none;
+    .site-tittle {
+      span {
+        display: flex;
+        letter-spacing: 1px;
+        font-size: 50px;
+        background: lightcoral;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        /* pensar se coloco isto ou nao
+        &:after {
+          content: "";
+          height: 2px;
+          width: 20vw;
+          background: black;
+          display: inline-block;
+          transform: translateY(-6px);
+          position: relative;
+          bottom: -60px;
+        } */
+      }
+    }
+  }
+  .banner-img {
+    img {
+      max-width: 180px;
+      max-height: 170px;
+    }
+  }
+}
