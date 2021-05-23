@@ -1,7 +1,93 @@
 .project-area {
+  h2 {
+    font-family: "Times New Roman", Times, serif;
+    padding: 3%;
+  }
   .discord-bot {
+    .discordProj-tittle {
+      font-family: "Times New Roman", Times, serif;
+      padding: 3%;
+      text-decoration: underline;
+    }
     img {
       max-width: 100%;
+      border: 2px solid black;
+    }
+    .texto {
+      padding: 4% 4% 0 4%;
+      .typelang {
+        text-align: center;
+        padding: 2%;
+        img {
+          border: none;
+        }
+        .sourcebtn {
+          padding: 0.5rem;
+          font-family: "Times New Roman", Times, serif;
+          &:hover {
+            background-color: white;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+  .personal-portfolio {
+    .portfolio-tittle {
+      font-family: "Times New Roman", Times, serif;
+      padding: 3%;
+      text-decoration: underline;
+    }
+    img {
+      max-width: 100%;
+      border: 2px solid black;
+    }
+    .texto {
+      padding: 4% 4% 0 4%;
+      .typelang {
+        text-align: center;
+        padding: 2%;
+        img {
+          border: none;
+        }
+        .sourcebtn {
+          padding: 0.5rem;
+          font-family: "Times New Roman", Times, serif;
+          &:hover {
+            background-color: white;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+  .todo-list {
+    .todo-tittle {
+      font-family: "Times New Roman", Times, serif;
+      padding: 3%;
+      text-decoration: underline;
+    }
+    img {
+      max-width: 100%;
+      border: 2px solid black;
+    }
+    .texto {
+      padding: 4% 4% 0 4%;
+      .typelang {
+        text-align: center;
+        padding: 2%;
+        img {
+          border: none;
+        }
+        .sourcebtn {
+          padding: 0.5rem;
+          font-family: "Times New Roman", Times, serif;
+          &:hover {
+            background-color: white;
+            color: black;
+          }
+        }
+      }
     }
   }
 }

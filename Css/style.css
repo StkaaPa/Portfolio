@@ -7,6 +7,21 @@ body {
   padding-top: 130px;
 }
 
+.about-main .about-area .about-tittle span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  letter-spacing: 1px;
+  font-size: 50px;
+  background: lightblue;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-main .about-area img {
+  max-width: 100%;
+}
+
 .about-main .about-area .timeline {
   color: #323232;
   line-height: 1.6em;
@@ -423,8 +438,111 @@ body {
   }
 }
 
+.project-area h2 {
+  font-family: "Times New Roman", Times, serif;
+  padding: 3%;
+}
+
+.project-area .discord-bot .discordProj-tittle {
+  font-family: "Times New Roman", Times, serif;
+  padding: 3%;
+  text-decoration: underline;
+}
+
 .project-area .discord-bot img {
   max-width: 100%;
+  border: 2px solid black;
+}
+
+.project-area .discord-bot .texto {
+  padding: 4% 4% 0 4%;
+}
+
+.project-area .discord-bot .texto .typelang {
+  text-align: center;
+  padding: 2%;
+}
+
+.project-area .discord-bot .texto .typelang img {
+  border: none;
+}
+
+.project-area .discord-bot .texto .typelang .sourcebtn {
+  padding: 0.5rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.project-area .discord-bot .texto .typelang .sourcebtn:hover {
+  background-color: white;
+  color: black;
+}
+
+.project-area .personal-portfolio .portfolio-tittle {
+  font-family: "Times New Roman", Times, serif;
+  padding: 3%;
+  text-decoration: underline;
+}
+
+.project-area .personal-portfolio img {
+  max-width: 100%;
+  border: 2px solid black;
+}
+
+.project-area .personal-portfolio .texto {
+  padding: 4% 4% 0 4%;
+}
+
+.project-area .personal-portfolio .texto .typelang {
+  text-align: center;
+  padding: 2%;
+}
+
+.project-area .personal-portfolio .texto .typelang img {
+  border: none;
+}
+
+.project-area .personal-portfolio .texto .typelang .sourcebtn {
+  padding: 0.5rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.project-area .personal-portfolio .texto .typelang .sourcebtn:hover {
+  background-color: white;
+  color: black;
+}
+
+.project-area .todo-list .todo-tittle {
+  font-family: "Times New Roman", Times, serif;
+  padding: 3%;
+  text-decoration: underline;
+}
+
+.project-area .todo-list img {
+  max-width: 100%;
+  border: 2px solid black;
+}
+
+.project-area .todo-list .texto {
+  padding: 4% 4% 0 4%;
+}
+
+.project-area .todo-list .texto .typelang {
+  text-align: center;
+  padding: 2%;
+}
+
+.project-area .todo-list .texto .typelang img {
+  border: none;
+}
+
+.project-area .todo-list .texto .typelang .sourcebtn {
+  padding: 0.5rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.project-area .todo-list .texto .typelang .sourcebtn:hover {
+  background-color: white;
+  color: black;
 }
 
 .skills-main .skills-area .card {
@@ -493,6 +611,10 @@ body {
   color: #333;
   font-family: "kanit";
   font-size: 18px;
+}
+
+.site-main {
+  padding: 5%;
 }
 
 .site-main .site-banner {

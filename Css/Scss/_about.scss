@@ -1,5 +1,18 @@
 .about-main {
   .about-area {
+    .about-tittle {
+      span {
+        display: flex;
+        letter-spacing: 1px;
+        font-size: 50px;
+        background: lightblue;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    img {
+      max-width: 100%;
+    }
     .timeline {
       color: rgb(50, 50, 50);
       line-height: 1.6em;
