@@ -1,17 +1,23 @@
 .about-main {
   .about-area {
     .about-tittle {
+      text-align: center;
+      padding: 5%;
+      font-family: "Times New Roman", Times, serif;
       span {
-        display: flex;
+        display: block;
         letter-spacing: 1px;
-        font-size: 50px;
+        font-size: 70px;
         background: lightblue;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
-    }
-    img {
-      max-width: 100%;
+      .paragraph {
+        padding: 3%;
+        .para {
+          letter-spacing: 1.5px;
+        }
+      }
     }
     .timeline {
       color: rgb(50, 50, 50);
