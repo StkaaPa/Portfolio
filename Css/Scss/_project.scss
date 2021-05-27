@@ -5,6 +5,9 @@
     font-family: $typeletter;
     padding: 3%;
     font-size: 50px;
+    background: $gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   .discord-bot {
     .discordProj-tittle {

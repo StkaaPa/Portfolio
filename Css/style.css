@@ -9,15 +9,16 @@ body {
 
 .about-main .about-area .about-tittle {
   text-align: center;
-  padding: 5%;
-  font-family: "Times New Roman", Times, serif;
+  padding: 7%;
+  font-family: "Manrope", sans-serif;
 }
 
 .about-main .about-area .about-tittle span {
   display: block;
   letter-spacing: 1px;
   font-size: 70px;
-  background: lightblue;
+  background: -webkit-gradient(linear, left bottom, left top, from(#4f03a4), color-stop(91%, #b279e4));
+  background: linear-gradient(0deg, #4f03a4 0%, #b279e4 91%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -34,13 +35,13 @@ body {
   color: #323232;
   line-height: 1.6em;
   font-size: 112.5%;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Manrope", sans-serif;
   list-style: none;
   position: relative;
   width: 660px;
   margin: 0px auto;
   margin-top: 20px;
-  padding: 1em 0;
+  padding: 2% 0;
 }
 
 .about-main .about-area .timeline::before {
@@ -78,14 +79,13 @@ body {
 }
 
 .about-main .about-area .timeline li .direction-l .flag {
-  -webkit-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
-          box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+  border: 1px solid black;
 }
 
 .about-main .about-area .timeline li .direction-l .flag::before {
   position: absolute;
   top: 50%;
-  right: -36px;
+  right: -37px;
   content: "";
   display: block;
   width: 12px;
@@ -128,14 +128,13 @@ body {
 }
 
 .about-main .about-area .timeline li .direction-r .flag {
-  -webkit-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
-          box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+  border: 1px solid black;
 }
 
 .about-main .about-area .timeline li .direction-r .flag:before {
   position: absolute;
   top: 50%;
-  left: -36px;
+  left: -37px;
   content: "";
   display: block;
   width: 12px;
@@ -191,15 +190,18 @@ body {
   display: inline;
   line-height: 1em;
   font-size: 0.66666em;
-  color: #ff5050;
+  font-weight: bold;
+  color: black;
   vertical-align: middle;
 }
 
 .about-main .about-area .timeline .flag-wrapper .time-wrapper .time {
   display: inline-block;
   padding: 4px 6px;
-  background: lightgoldenrodyellow;
+  background: -webkit-gradient(linear, left bottom, left top, from(#4f03a4), color-stop(91%, #b279e4));
+  background: linear-gradient(0deg, #4f03a4 0%, #b279e4 91%);
   border-radius: 5px;
+  border: 1px solid black;
 }
 
 /* MEDIA QUERIES TIMELINE */
@@ -224,7 +226,7 @@ body {
     display: block;
     width: 12px;
     height: 12px;
-    margin-left: -7px;
+    margin-left: -6px;
     background: #fff;
     border-radius: 10px;
     border: 4px solid #ff5050;
@@ -235,11 +237,11 @@ body {
     position: absolute;
     left: 50.5%;
     top: -8px;
-    margin-left: -9px;
+    margin-left: -8px;
     height: 0;
     width: 0;
     border: solid transparent;
-    border-bottom-color: lightblue;
+    border-bottom-color: black;
     border-width: 8px;
     pointer-events: none;
   }
@@ -268,7 +270,7 @@ body {
     display: block;
     width: 12px;
     height: 12px;
-    margin-left: -7px;
+    margin-left: -6px;
     background: #fff;
     border-radius: 10px;
     border: 4px solid #ff5050;
@@ -279,11 +281,11 @@ body {
     position: absolute;
     left: 50.5%;
     top: -8px;
-    margin-left: -9px;
+    margin-left: -8px;
     height: 0;
     width: 0;
     border: solid transparent;
-    border-bottom-color: lightblue;
+    border-bottom-color: black;
     border-width: 8px;
     pointer-events: none;
   }
@@ -305,7 +307,7 @@ body {
     display: inline-grid;
   }
   .about-main .about-area .timeline .flag-wrapper .flag {
-    background: lightcoral;
+    background: lightgray;
     z-index: 15;
   }
   .about-main .about-area .timeline .flag-wrapper .time-wrapper {
@@ -453,6 +455,10 @@ body {
   font-family: "Manrope", sans-serif;
   padding: 3%;
   font-size: 50px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#4f03a4), color-stop(91%, #b279e4));
+  background: linear-gradient(0deg, #4f03a4 0%, #b279e4 91%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .project-area .discord-bot .discordProj-tittle {
