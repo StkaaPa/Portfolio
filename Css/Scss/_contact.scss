@@ -36,6 +36,10 @@
     }
     .email {
       border: none;
+      &:hover {
+        background: none;
+        color: black;
+      }
     }
     .footer {
       font-family: $typeletter;

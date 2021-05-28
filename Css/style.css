@@ -936,6 +936,11 @@ body {
   border: none;
 }
 
+.contact-main .contact-area .email:hover {
+  background: none;
+  color: black;
+}
+
 .contact-main .contact-area .footer {
   font-family: "Manrope", sans-serif;
   font-size: 13px;
