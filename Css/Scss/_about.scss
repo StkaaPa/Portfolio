@@ -171,7 +171,7 @@
           .time {
             display: inline-block;
             padding: 4px 6px;
-            background: $gradient;
+            background: rgb(223, 223, 223);
             border-radius: 5px;
             border: 1px solid black;
           }
@@ -235,6 +235,7 @@
               background: rgb(245, 245, 245);
               box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
               z-index: 15;
+              border: 0.5px solid black;
             }
           }
           .direction-r {
@@ -278,6 +279,7 @@
               background: rgb(245, 245, 245);
               box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
               z-index: 15;
+              border: 0.5px solid black;
             }
           }
         }
