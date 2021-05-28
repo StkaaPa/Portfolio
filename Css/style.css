@@ -909,6 +909,14 @@ body {
   font-size: 18px;
   font-weight: 900;
   text-decoration: underline;
+  border: none;
+}
+
+.contact-main .contact-area h5:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#4f03a4), color-stop(91%, #b279e4));
+  background: linear-gradient(0deg, #4f03a4 0%, #b279e4 91%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .contact-main .contact-area i {
@@ -932,18 +940,9 @@ body {
   outline: none;
 }
 
-.contact-main .contact-area .email {
-  border: none;
-}
-
-.contact-main .contact-area .email:hover {
-  background: none;
-  color: black;
-}
-
 .contact-main .contact-area .footer {
   font-family: "Manrope", sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   padding: 3% 0 0 0;
 }
 

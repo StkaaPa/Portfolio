@@ -16,6 +16,12 @@
       font-size: 18px;
       font-weight: 900;
       text-decoration: underline;
+      border: none;
+      &:hover {
+        background: $gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
     }
     i {
       padding: 1.5% 1.5%;
@@ -34,16 +40,9 @@
         outline: none;
       }
     }
-    .email {
-      border: none;
-      &:hover {
-        background: none;
-        color: black;
-      }
-    }
     .footer {
       font-family: $typeletter;
-      font-size: 13px;
+      font-size: 14px;
       padding: 3% 0 0 0;
     }
   }
