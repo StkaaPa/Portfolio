@@ -386,9 +386,8 @@
             </div>
             <div class="col-md-12 pb-3">
               <div class="card">
-                  <div class="card_front_none">
-                    More Skills in development &#128514;
-                  </div>
+                <div class="card_front_none">
+                  More Skills in development &#128514;
                 </div>
               </div>
             </div>
@@ -400,7 +399,15 @@
       <section class="contact-area">
         <div class="container-fluid">
           <h2 class="tittle text-center">Send me message!</h2>
-          <h5 class="subtittle text-center">goncalvesamuel99@gmail.com</h5>
+          <div class="e-mail text-center">
+            <input
+              id="email"
+              type="text"
+              class="subtittle text-center"
+              onclick="copyText()"
+              value="goncalvesamuel99@gmail.com"
+            />
+          </div>
           <div class="row">
             <div class="col-md-12 p-3 text-center">
               <a href="https://github.com/StkaaPa" target="_blank"
@@ -432,6 +439,7 @@
       </section>
     </main>
     <script src="js/button.js"></script>
+    <script src="js/copy.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

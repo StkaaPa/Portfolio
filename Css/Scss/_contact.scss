@@ -10,17 +10,17 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-    h5 {
-      padding: 2% 0;
-      font-family: $typeletter;
-      font-size: 18px;
-      font-weight: 900;
-      text-decoration: underline;
-      border: none;
-      &:hover {
-        background: $gradient;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+    .e-mail {
+      input {
+        padding: 2% 0;
+        font-family: $typeletter;
+        font-size: 18px;
+        font-weight: 900;
+        text-decoration: underline;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        width: 350px;
       }
     }
     i {
@@ -59,6 +59,12 @@
         background: white;
         background-clip: padding-box;
         color: black;
+        &:hover {
+          background: #fff;
+          color: black;
+          border-radius: 100%;
+          border: 1px solid black;
+        }
       }
     }
   }
